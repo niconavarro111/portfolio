@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Orven B. Navarro — Portfolio</title>
+  <meta
+    name="description"
+    content="Digital portfolio of Nicolas Orven B. Navarro, a fourth-year BSIT student at STI College Batangas focusing on web platforms, database architecture, and visual computing."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Floating Pill Header -->
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__brand-group">
+        <a href="#home" class="monogram" aria-label="Nicolas Navarro Home">N</a>
+        <a href="#home" class="brand-pill">NICOLAS / PORTFOLIO</a>
+      </div>
+
+      <button
+        type="button"
+        class="menu-pill"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-drawer"
+      >
+        <span class="menu-pill__label">MENU</span>
+        <span class="menu-pill__icon" aria-hidden="true">+</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Dark Slide-Over Navigation Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="nav-drawer" id="nav-drawer" aria-label="Site navigation" hidden>
+    <div class="nav-drawer__top">
+      <span class="drawer-kicker">NAVIGATION</span>
+      <button type="button" class="menu-pill menu-pill--dark" id="menu-close" aria-label="Close navigation menu">
+        <span>CLOSE</span>
+        <span aria-hidden="true">&mdash;</span>
+      </button>
+    </div>
+
+    <nav class="drawer-links">
+      <a href="#home" class="drawer-link active" data-section="home">
+        <span class="drawer-link__num">01</span>
+        <span class="drawer-link__text">HOME</span>
+      </a>
+      <a href="#about" class="drawer-link" data-section="about">
+        <span class="drawer-link__num">02</span>
+        <span class="drawer-link__text">ABOUT ME</span>
+      </a>
+      <a href="#skills" class="drawer-link" data-section="skills">
+        <span class="drawer-link__num">03</span>
+        <span class="drawer-link__text">KEY SKILLS</span>
+      </a>
+      <a href="#projects" class="drawer-link" data-section="projects">
+        <span class="drawer-link__num">04</span>
+        <span class="drawer-link__text">PROJECTS</span>
+      </a>
+      <a href="#certifications" class="drawer-link" data-section="certifications">
+        <span class="drawer-link__num">05</span>
+        <span class="drawer-link__text">CERTIFICATIONS</span>
+      </a>
+      <a href="#contact" class="drawer-link" data-section="contact">
+        <span class="drawer-link__num">06</span>
+        <span class="drawer-link__text">CONTACT</span>
+      </a>
+    </nav>
+
+    <div class="nav-drawer__footer">
+      <a
+        href="assets/Nicolas_Orven_Navarro_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-pill btn-pill--light"
+      >
+        VIEW RESUME PDF ↗
+      </a>
+      <div class="drawer-meta">
+        <span>nnicolasorven@gmail.com</span>
+        <span>Lobo, Batangas · PH</span>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="kicker">BATANGAS · PHILIPPINES</p>
+
+          <h1 class="hero__serif-title">
+            Hi, I’m <em>Nicolas.</em>
+          </h1>
+
+          <div class="typewriter-line" aria-label="const focus = Software & Systems">
+            <span class="typewriter-text" id="typewriter-text">const focus = "Software &amp; Systems";</span><span class="cursor-block" aria-hidden="true"></span>
+          </div>
+
+          <h2 class="hero__subtitle">Designing smart systems with precision and purpose.</h2>
+
+          <p class="hero__description">
+            I'm Nicolas Orven B. Navarro, a fourth-year Information Technology student at STI College Batangas.
+            My work centers on web platforms, database architecture, and visual computing—turning complex logic
+            into clean, user-focused applications. Explore my portfolio to see the systems I've engineered,
+            my technical stack, and my growth as an aspiring developer.
+          </p>
+
+          <div class="hero__actions">
+            <a
+              href="assets/Nicolas_Orven_Navarro_Resume.pdf"
+              download="Nicolas_Orven_Navarro_Resume.pdf"
+              class="btn-pill btn-pill--dark"
+            >
+              RESUME
+            </a>
+            <a
+              href="assets/Nicolas_Orven_Navarro_Cover_Letter.pdf"
+              download="Nicolas_Orven_Navarro_Cover_Letter.pdf"
+              class="btn-pill btn-pill--outline"
+            >
+              COVER LETTER
+            </a>
+            <a href="#projects" class="btn-pill btn-pill--outline">
+              VIEW PROJECT &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Dark Bento Portrait Card (matching reference) -->
+        <div class="hero__visual reveal">
+          <div class="portrait-bento">
+            <div class="portrait-bento__topbar">
+              <span>STI BATANGAS</span>
+            </div>
+
+            <div class="portrait-bento__stage">
+              <span class="code-bg code-bg--left" aria-hidden="true">&lt;/&gt;</span>
+              <span class="code-bg code-bg--right" aria-hidden="true">&lt;/&gt;</span>
+              <div class="portrait-sticker">
+                <img
+                  src="assets/nicolas-portrait.png"
+                  alt="Portrait of Nicolas Orven B. Navarro"
+                />
+              </div>
+            </div>
+
+            <div class="portrait-bento__footer">
+              <span class="handle">@nclsrvn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="kicker">// ABOUT ME</p>
+          <h2 class="section-title">
+            Focused on how things work <em>beneath the surface.</em>
+          </h2>
+        </div>
+
+        <div class="bento-about">
+          <article class="bento-card bento-about__story reveal">
+            <span class="bento-tag">BACKGROUND</span>
+            <p>
+              I'm <strong>Nicolas Orven B. Navarro</strong>, a BSIT senior drawn to the mechanics behind reliable
+              software. From structuring relational databases and writing Python scripts to building automated web
+              applications, I enjoy taking a methodical approach to development and seeing how every component connects.
+            </p>
+            <p>
+              Working on academic labs and my capstone system has taught me that strong software comes from discipline,
+              clear logic, and attention to detail. Rather than just making things look good on the front end, I care
+              about making sure the underlying architecture is solid, scalable, and genuinely useful.
+            </p>
+            <p>
+              Away from the screen, I bring that same mindset of consistency, structured tracking, and steady progress
+              into my personal goals—always aiming to level up a little more each day.
+            </p>
+          </article>
+
+          <div class="bento-about__side">
+            <article class="bento-card reveal">
+              <span class="bento-tag">PERSONAL DETAILS</span>
+              <dl class="details-list">
+                <div class="details-row">
+                  <dt>FULL NAME</dt>
+                  <dd>Nicolas Orven B. Navarro</dd>
+                </div>
+                <div class="details-row">
+                  <dt>BORN</dt>
+                  <dd>July 4, 2004</dd>
+                </div>
+                <div class="details-row">
+                  <dt>PROGRAM</dt>
+                  <dd>Bachelor of Science in Information Technology</dd>
+                </div>
+                <div class="details-row">
+                  <dt>INSTITUTION</dt>
+                  <dd>STI College Batangas</dd>
+                </div>
+                <div class="details-row">
+                  <dt>LOCATION</dt>
+                  <dd>Lobo, Batangas, Philippines</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header section-header--split reveal">
+          <div>
+            <p class="kicker">// KEY SKILLS</p>
+            <h2 class="section-title">Tools &amp; <em>technologies.</em></h2>
+          </div>
+
+          <div class="filter-pills" role="tablist" aria-label="Filter skills by category">
+            <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">ALL (7)</button>
+            <button type="button" class="filter-pill" data-filter="dev" role="tab" aria-selected="false">DEV &amp; DATA</button>
+            <button type="button" class="filter-pill" data-filter="design" role="tab" aria-selected="false">DESIGN &amp; MOTION</button>
+            <button type="button" class="filter-pill" data-filter="docs" role="tab" aria-selected="false">PRODUCTIVITY</button>
+          </div>
+        </div>
+
+        <div class="skills-bento">
+          <article class="bento-card skill-bento-card reveal" data-category="dev">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">01 · DATABASE</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>SQL</h3>
+            <p>Relational schema design, structured queries, data integrity, and backend data modeling for web systems.</p>
+          </article>
+
+          <article class="bento-card skill-bento-card reveal" data-category="dev">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">02 · IDE</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>Visual Studio Code</h3>
+            <p>Primary development environment for writing clean web code, debugging scripts, and managing repositories.</p>
+          </article>
+
+          <article class="bento-card skill-bento-card reveal" data-category="design">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">03 · UI / UX</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>Figma</h3>
+            <p>Interface wireframing, responsive component layouts, and interactive prototypes before implementation.</p>
+          </article>
+
+          <article class="bento-card skill-bento-card reveal" data-category="design">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">04 · GRAPHICS</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>Canva</h3>
+            <p>Clean visual compositions, system presentation decks, and cohesive digital design assets.</p>
+          </article>
+
+          <article class="bento-card skill-bento-card reveal" data-category="design">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">05 · MOTION &amp; VFX</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>After Effects</h3>
+            <p>Motion graphics, visual compositing, smooth keyframe transitions, and dynamic visual storytelling.</p>
+          </article>
+
+          <article class="bento-card skill-bento-card reveal" data-category="design">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">06 · ANIMATION</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>Alight Motion</h3>
+            <p>Precision keyframe animation, custom easing curves, and crisp visual edits for digital media.</p>
+          </article>
+
+          <article class="bento-card skill-bento-card reveal" data-category="docs">
+            <div class="skill-bento-card__head">
+              <span class="bento-tag">07 · DOCUMENTATION</span>
+              <span class="skill-dot"></span>
+            </div>
+            <h3>Microsoft Word</h3>
+            <p>Structured technical documentation, capstone manuscripts, system specifications, and formal reports.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="kicker">// FEATURED PROJECT</p>
+          <h2 class="section-title">Selected <em>work.</em></h2>
+        </div>
+
+        <article class="bento-card project-bento reveal">
+          <div class="project-bento__media">
+            <button
+              type="button"
+              class="project-preview-btn"
+              data-lightbox-src="assets/dental-clinic-project.jpg"
+              data-lightbox-caption="Berberabe Pastor Dental Clinic — Web-Based Appointment &amp; Inventory System"
+              aria-label="Inspect Berberabe Pastor Dental Clinic system screenshot"
+            >
+              <img
+                src="assets/dental-clinic-project.jpg"
+                alt="Berberabe Pastor Dental Clinic web-based appointment and inventory system interface"
+              />
+              <span class="preview-pill">CLICK TO INSPECT UI ↗</span>
+            </button>
+          </div>
+
+          <div class="project-bento__body">
+            <div class="project-tags">
+              <span class="tag-pill tag-pill--dark">CAPSTONE SYSTEM</span>
+              <span class="tag-pill">WEB PLATFORM</span>
+              <span class="tag-pill">SQL DATABASE</span>
+            </div>
+
+            <h3 class="project-bento__title">
+              A Web-Based Appointment and Inventory System for Berberabe Pastor Dental Clinic
+            </h3>
+
+            <p class="project-bento__desc">
+              A full-stack capstone web platform designed for Berberabe Pastor Dental Clinic in Batangas City. It
+              replaces manual appointment logbooks and paper-based supply tracking with a unified digital system—giving
+              patients an effortless booking experience and giving clinic staff real-time visibility over schedules and
+              dental inventory.
+            </p>
+
+            <p class="kicker kicker--sm">PROJECT HIGHLIGHTS</p>
+
+            <div class="highlights-bento">
+              <div class="highlight-box">
+                <span class="highlight-num">01</span>
+                <div>
+                  <h4>Online Appointment Scheduling</h4>
+                  <p>Patient-facing booking flow with clinic hours status, service selection, and organized appointment queues.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <span class="highlight-num">02</span>
+                <div>
+                  <h4>Real-Time Inventory Tracking</h4>
+                  <p>Centralized monitoring of dental consumables and supplies with stock-level tracking to prevent shortages.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <span class="highlight-num">03</span>
+                <div>
+                  <h4>Relational SQL Architecture</h4>
+                  <p>Structured database connecting patient records, appointment histories, services, and inventory logs.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <span class="highlight-num">04</span>
+                <div>
+                  <h4>Patient-First Interface</h4>
+                  <p>Clean, responsive layout built for clear clinic communication, service discovery, and quick sign-up.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="kicker">// CERTIFICATIONS</p>
+          <h2 class="section-title">Verified <em>credentials.</em></h2>
+        </div>
+
+        <div class="certs-bento">
+          <article class="bento-card cert-card reveal">
+            <button
+              type="button"
+              class="cert-preview-btn"
+              data-lightbox-src="assets/cert-oracle-java.jpg"
+              data-lightbox-caption="Oracle Academy — Java Fundamentals (19th June 2024)"
+              aria-label="View Oracle Academy Java Fundamentals certificate"
+            >
+              <img
+                src="assets/cert-oracle-java.jpg"
+                alt="Oracle Academy Award of Course Completion for Java Fundamentals presented to Nicolas Orven B Navarro"
+              />
+              <span class="preview-pill">VIEW CERTIFICATE ↗</span>
+            </button>
+
+            <div class="cert-card__body">
+              <div class="cert-card__meta">
+                <span class="tag-pill tag-pill--dark">ORACLE ACADEMY</span>
+                <span class="tag-pill">JUNE 19, 2024</span>
+              </div>
+              <h3>Java Fundamentals</h3>
+              <p>
+                Award of Course Completion for satisfactory completion of all coursework, instructed by Beronilla Peña.
+              </p>
+            </div>
+          </article>
+
+          <article class="bento-card cert-card reveal">
+            <button
+              type="button"
+              class="cert-preview-btn"
+              data-lightbox-src="assets/cert-sap-s4hana.jpg"
+              data-lightbox-caption="SAP University Alliances — SD, MM, PP, FI, CO modules of S/4HANA using Global Bike (Jan 20 – Jun 7, 2025)"
+              aria-label="View SAP S/4HANA Certificate of Participation"
+            >
+              <img
+                src="assets/cert-sap-s4hana.jpg"
+                alt="SAP University Alliances Certificate of Participation in SD, MM, PP, FI, CO modules of S/4HANA using Global Bike"
+              />
+              <span class="preview-pill">VIEW CERTIFICATE ↗</span>
+            </button>
+
+            <div class="cert-card__body">
+              <div class="cert-card__meta">
+                <span class="tag-pill tag-pill--dark">SAP UNIVERSITY ALLIANCES</span>
+                <span class="tag-pill">JAN 20 – JUN 7, 2025</span>
+              </div>
+              <h3>S/4HANA Modules (SD, MM, PP, FI, CO)</h3>
+              <p>
+                Certificate of Participation in enterprise resource planning modules using Global Bike, conducted by STI College, Philippines.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- DARK INVERTED CONTACT & FOOTER SECTION (matching reference) -->
+  <footer id="contact" class="dark-footer">
+    <div class="dark-footer__watermark" aria-hidden="true">CONTACT</div>
+
+    <div class="container dark-footer__inner">
+      <div class="dark-footer__top reveal">
+        <p class="kicker kicker--light">GET IN TOUCH</p>
+        <h2 class="dark-footer__title">
+          LET’S WORK <em>TOGETHER</em>
+        </h2>
+        <p class="dark-footer__sub">
+          Open to entry-level software &amp; web development roles, internships, and collaborative projects.
+        </p>
+      </div>
+
+      <div class="dark-footer__grid reveal">
+        <div class="dark-card">
+          <span class="dark-card__label">EMAIL</span>
+          <div class="dark-card__row">
+            <a href="mailto:nnicolasorven@gmail.com" class="dark-card__value">nnicolasorven@gmail.com</a>
+            <button
+              type="button"
+              class="copy-pill"
+              id="copy-email-btn"
+              data-copy="nnicolasorven@gmail.com"
+            >
+              COPY
+            </button>
+          </div>
+        </div>
+
+        <a
+          href="https://www.facebook.com/nclsrvn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="dark-card dark-card--link"
+        >
+          <span class="dark-card__label">FACEBOOK</span>
+          <div class="dark-card__row">
+            <span class="dark-card__value">facebook.com/nclsrvn</span>
+            <span class="dark-card__arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="dark-footer__bottom">
+        <span>NICOLAS ORVEN B. NAVARRO · BSIT</span>
+        <span>STI COLLEGE BATANGAS · LOBO, BATANGAS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project screenshot preview" hidden>
+    <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox__content">
+      <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close preview">&times;</button>
+      <img
+        src="assets/dental-clinic-project.jpg"
+        alt="Full preview of Berberabe Pastor Dental Clinic web system"
+      />
+      <p class="lightbox__caption">Berberabe Pastor Dental Clinic — Web-Based Appointment &amp; Inventory System</p>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
